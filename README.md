@@ -1,6 +1,6 @@
 # grunt-responsive-images-converter
 
-> Convert image tag in markdown file to picture element as to support resoponsive image. It is best to use with [grunt-responsive-images ](https://github.com/andismith/grunt-responsive-images), which could build responsive images from one image.
+> Convert image tag in markdown file to picture element as to support [resoponsive image](http://responsiveimages.org). It is best to use with [grunt-responsive-images ](https://github.com/andismith/grunt-responsive-images), which could build responsive images from one image.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.4`
@@ -153,6 +153,9 @@ grunt.initConfig({
 })
 ```
 The result after running task will be written to `tmp/dest_equal_src.md`.
+
+## Notice
+At present, browsers don't support the responsive image tech well, you may need use the [picturefill](http://scottjehl.github.io/picturefill/) to polyfill.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
