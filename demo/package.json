@@ -1,0 +1,8 @@
+{
+  "name": "Responsive-Image-Converter-Demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-responsive-images-converter": "~0.0.1"
+  }
+}
