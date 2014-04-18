@@ -104,6 +104,7 @@ module.exports = function(grunt) {
     this.files.forEach( function( file ) {
 
       var dest = file.dest;
+      var destEqualSrc = !dest;
       var src = file.src.filter( function( filepath ) {
 
         // Warn on and remove invalid source files (if nonull was set).
@@ -115,7 +116,7 @@ module.exports = function(grunt) {
         }
       } ).map( function( filepath ) {
 
-        if( !dest ) {
+        if( destEqualSrc ) {
           dest = filepath;
         }
 
